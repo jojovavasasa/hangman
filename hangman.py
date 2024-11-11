@@ -22,11 +22,11 @@ while tries > 0:
                 word_display[i] = guess
         if "".join(word_display) == word_to_guess:
             print(f"Good job! The word was {word_to_guess}")
+            time.sleep(5)
             break
     else:
         tries -= 1
         print(f"Wrong, try again. You have {tries} attempts left.")
-        time.sleep(5)
     
 if tries == 0:
     print(f"You lost. The word was {word_to_guess}")
