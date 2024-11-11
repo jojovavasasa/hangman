@@ -1,4 +1,5 @@
 import random
+import time
 
 words = ["java", "hangman", "fun", "epic", "where", "python", "coding", "gaming", "winner", "help", "cheese", "pizza", "jazz", "mcdonalds", "cheeseburger", "happy", "minions"]
 
@@ -25,6 +26,8 @@ while tries > 0:
     else:
         tries -= 1
         print(f"Wrong, try again. You have {tries} attempts left.")
+        time.sleep(5)
     
 if tries == 0:
     print(f"You lost. The word was {word_to_guess}")
+    time.sleep(5)
